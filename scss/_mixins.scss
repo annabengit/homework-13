@@ -1,0 +1,67 @@
+@mixin mycontainer {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+@mixin myheader {
+  //   padding-top: 21px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: fixed;
+  width: 100%;
+  background-color: #f1f1f1;
+  z-index: 1000;
+}
+
+@mixin myflex {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin myheader2 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@mixin mycardboard {
+  margin-top: 27px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin mycard {
+  height: 357px;
+  width: 362px;
+  background-color: #ffffff;
+  //   display: inline-block;
+  //   position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 0px 5px 5px;
+}
+
+@mixin mybigtext {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: transparent;
+}
+
+@mixin myphotocontainer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

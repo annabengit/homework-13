@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+.container {
+  @include mycontainer;
+}
+
+body {
+  header {
+    @include myheader;
+    nav {
+      vertical-align: middle;
+      @include myflex;
+      align-items: center;
+      ul {
+        height: 50px;
+        @include myflex;
+        vertical-align: middle;
+        align-items: center;
+
+        .nav {
+          padding-right: 35px;
+        }
+        .logo {
+          padding-right: 35px;
+          height: 33px;
+          width: 30px;
+          vertical-align: middle;
+          background-image: url(../images/woman.svg);
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+  .s-1 {
+    padding-top: 76px;
+    background-color: $mybackground;
+    h2 {
+      @include myheader2;
+    }
+    .rame {
+      @include mycardboard;
+      .box1 {
+        @include mycard;
+        .bigbox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .imagebox {
+            height: 186px;
+            width: 362px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .textbox1 {
+              @include mybigtext;
+            }
+          }
+        }
+
+        .textbox2 {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          height: 60px;
+          width: 238px;
+          background-color: #fff;
+          padding-top: 35px;
+          p {
+            color: #8a8787;
+            font-family: Roboto;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            background-color: transparent;
+            line-height: 25px;
+          }
+          .clock {
+            background-color: #fff;
+            vertical-align: middle;
+            padding-right: 6px;
+          }
+          .line2 {
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            vertical-align: middle;
+          }
+        }
+        .first {
+          background-image: url(../images/beach.png);
+        }
+        .second {
+          background-image: url(../images/sea.png);
+        }
+        .third {
+          background-image: url(../images/ice.png);
+        }
+      }
+    }
+  }
+  .s-2 {
+    background-color: $mybackground;
+    padding-top: 57px;
+    padding-bottom: 36px;
+    h2 {
+      @include myheader2;
+    }
+    .photos {
+      @include myphotocontainer;
+      .bigphoto {
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        justify-content: space-between;
+        .bridge {
+          width: 758px;
+          height: 430px;
+          background-image: url(../images/bridge.png);
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          .textbox3 {
+            color: #fff;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            background-color: transparent;
+          }
+        }
+        .house {
+          width: 758px;
+          height: 430px;
+          background-image: url(../images/house.png);
+        }
+      }
+      .smallphoto {
+        height: 900px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+    }
+  }
+  .footer {
+    height: 201px;
+    background-color: #243043;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .footercontent {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .links {
+        color: #818687;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-right: 85px;
+        line-height: 24px;
+      }
+      .stay {
+        color: #fff;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        vertical-align: top;
+        margin-right: 440px;
+      }
+      .geolab {
+        vertical-align: top;
+      }
+    }
+  }
+}

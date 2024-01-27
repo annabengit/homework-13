@@ -1,0 +1,363 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+body header {
+  color: #000;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: fixed;
+  width: 100%;
+  background-color: #f1f1f1;
+  z-index: 1000;
+}
+body header nav {
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body header nav ul {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  align-items: center;
+}
+body header nav ul .nav {
+  padding-right: 35px;
+}
+body header nav ul .logo {
+  padding-right: 35px;
+  height: 33px;
+  width: 30px;
+  vertical-align: middle;
+  background-image: url(../images/woman.svg);
+  background-repeat: no-repeat;
+}
+body .s-1 {
+  padding-top: 76px;
+  background-color: #f1f1f1;
+}
+body .s-1 h2 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+body .s-1 .rame {
+  margin-top: 27px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .s-1 .rame .box1 {
+  height: 357px;
+  width: 362px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 0px 5px 5px;
+}
+body .s-1 .rame .box1 .bigbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .s-1 .rame .box1 .bigbox .imagebox {
+  height: 186px;
+  width: 362px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .s-1 .rame .box1 .bigbox .imagebox .textbox1 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: transparent;
+}
+body .s-1 .rame .box1 .textbox2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 60px;
+  width: 238px;
+  background-color: #fff;
+  padding-top: 35px;
+}
+body .s-1 .rame .box1 .textbox2 p {
+  color: #8a8787;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: transparent;
+  line-height: 25px;
+}
+body .s-1 .rame .box1 .textbox2 .clock {
+  background-color: #fff;
+  vertical-align: middle;
+  padding-right: 6px;
+}
+body .s-1 .rame .box1 .textbox2 .line2 {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+body .s-1 .rame .box1 .first {
+  background-image: url(../images/beach.png);
+}
+body .s-1 .rame .box1 .second {
+  background-image: url(../images/sea.png);
+}
+body .s-1 .rame .box1 .third {
+  background-image: url(../images/ice.png);
+}
+body .s-2 {
+  background-color: #f1f1f1;
+  padding-top: 57px;
+  padding-bottom: 36px;
+}
+body .s-2 h2 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+body .s-2 .photos {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .s-2 .photos .bigphoto {
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  justify-content: space-between;
+}
+body .s-2 .photos .bigphoto .bridge {
+  width: 758px;
+  height: 430px;
+  background-image: url(../images/bridge.png);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .s-2 .photos .bigphoto .bridge .textbox3 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: transparent;
+}
+body .s-2 .photos .bigphoto .house {
+  width: 758px;
+  height: 430px;
+  background-image: url(../images/house.png);
+}
+body .s-2 .photos .smallphoto {
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body .footer {
+  height: 201px;
+  background-color: #243043;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .footer .footercontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body .footer .footercontent .links {
+  color: #818687;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 85px;
+  line-height: 24px;
+}
+body .footer .footercontent .stay {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  vertical-align: top;
+  margin-right: 440px;
+}
+body .footer .footercontent .geolab {
+  vertical-align: top;
+}/*# sourceMappingURL=global.css.map */
